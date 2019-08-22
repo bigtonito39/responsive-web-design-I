@@ -188,6 +188,10 @@ html {
     width: 25%;
 }
 
+.logo1 {
+    display: none;
+}
+
 .navigation a {
     margin-right: 50px;
     font-weight: bolder;
@@ -240,19 +244,35 @@ html {
         width: 850px;
         margin: 0 auto;
     }
+    .logo {
+        display: none;
+    }
+    .logo1 {
+        display: block;
+        width: 25%;
+        margin-left: 30%;
+        margin-bottom: 5%;
+        margin-top: 0%;
+    }
     header {
         display: flex;
-        order: 1px;
-        flex-flow: wrap;
+        flex-direction: column;
+    }
+    .navigation {
+        display: flex;
+        margin-left: 20px;
+        width: 1%;
+        padding-bottom: 0%;
     }
     .navigation a {
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: bolder;
     }
     .middle3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 50%;
+        margin-right: 40%;
     }
     .middle3 img {
         display: none;
@@ -260,6 +280,7 @@ html {
     .button {
         padding-top: 8px 25px;
         border: 2px solid Black;
+        margin-left: 30%;
     }
     hr {
         border: 1px solid black;
@@ -268,8 +289,11 @@ html {
         font-weight: bold;
     }
     .middle-img {
-        width: 100%;
+        width: 90%;
         height: auto;
+    }
+    .middleSection {
+        width: 90%;
     }
 }
 
