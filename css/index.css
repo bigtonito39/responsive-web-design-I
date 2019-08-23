@@ -296,38 +296,37 @@ footer {
 @media(max-width:800px) {
     .container {
         width: 800px;
-        margin: 0 auto;
-        padding: 20px 1.25%;
+        margin: auto;
+        padding: 10%;
     }
     .logo {
         display: none;
     }
     .logo1 {
-        display: block;
-        width: 25%;
-        margin-left: 30%;
+        display: flex;
+        width: 40%;
         margin-bottom: 5%;
-        margin-top: 0%;
+        margin-left: 40%;
     }
     header {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .navigation {
         display: flex;
-        margin-left: 20px;
-        width: 1%;
-        padding-bottom: 0%;
     }
     .navigation a {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bolder;
+        justify-content: space-around;
+        margin-left: 1%;
     }
     .middle3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 40%;
+        margin-right: 25%;
     }
     .middle3 img {
         display: none;
@@ -335,144 +334,177 @@ footer {
     .button {
         padding-top: 8px 25px;
         border: 2px solid Black;
-        margin-left: 30%;
     }
     hr {
         border: 1px solid black;
+        width: 100%;
     }
     .middle-img {
-        width: 85%;
+        width: 95%;
     }
     footer {
-        width: 80%
+        width: 80%;
+    }
+    .middleSection {
+        display: flex;
+        justify-content: space-around;
     }
     .middleSection .features {
         width: 49%;
     }
     .middleSection .about {
-        width: 49%;
-    }
-}
-
-@media(max-width:500px) {
-    .container {
-        width: 500px;
-        margin: 0 auto;
-        padding: 15px 1.25%;
-    }
-    .navigation {
-        display: flex;
-        margin-left: 20px;
-        width: 1%;
-        padding-bottom: 0%;
-        flex-direction: column;
-        margin-left: 180px;
-    }
-    .navigation a {
-        margin-bottom: 10px;
-        font-size: 25px;
-    }
-    .logo1 {
-        width: 50%;
-    }
-    .button {
-        padding: 8px 50px;
-        border: 2px solid Black;
-        margin-left: 30%;
+        width: 43%;
     }
     .lowerSection {
-        flex-direction: column;
-        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
     }
-    .vision,
-    .about {
-        margin-top: 20px;
+    .lowerSection .services {
+        width: 30%;
     }
-    h1 {
-        font-size: 70px;
+    .lowerSection .product {
+        width: 30%;
     }
-}
-
-
-/*NOTE: service page starts here*/
-
-.navigation2 {
-    display: flex;
-}
-
-.navigation2 a {
-    color: grey;
-    margin-left: 50px;
-    margin-top: 60px;
-    text-decoration: none;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}
-
-.navigation2 a:hover {
-    color: white;
-    background-color: grey;
-}
-
-.navigation2 .logo {
-    margin-bottom: 20px;
-    margin-left: 10px;
-    width: 170px;
-}
-
-.services-header-img {
-    margin-bottom: 20px;
-}
-
-.services {
-    margin-bottom: 30px;
-}
-
-.sixsquares {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-.digital,
-.ux,
-.marketing,
-.webdevelopment,
-.iosDevelopment,
-.androiddevelopment {
-    margin-top: 15px;
-    border: 1px solid black;
-    width: 425px;
-    height: 250px;
-    background-color: #f2f2f2;
-    text-align: left;
-    padding: 20px;
-}
-
-.sixsquares button {
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 8px 35px;
-    margin-top: 25px;
-    background: white;
-}
-
-.facts {
-    display: flex;
-    margin: 20px;
-}
-
-.listthings {
-    list-style-type: square;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-.services-info-img {
-    width: 380px;
-}
-
-footer {
-    margin-top: 50px;
+    .lowerSection .vision {
+        width: 30%;
+    }
+    @media(max-width:500px) {
+        .container {
+            width: 500px;
+            margin: auto;
+            padding: 10%;
+        }
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+        }
+        .navigation a {
+            font-size: 25px;
+            border-top: 1px solid grey;
+            padding: 10px 0px;
+            width: 100%;
+            text-align: center;
+        }
+        .Contact {
+            border-bottom: 1px solid grey;
+        }
+        .logo1 {
+            width: 40%;
+            margin-left: 20%;
+        }
+        .middle3 {
+            display: flex;
+            width: 40%;
+            align-items: flex-start;
+        }
+        .middle3 h1 {
+            font-size: 70%;
+        }
+        .middleSection {
+            flex-direction: column;
+        }
+        .middleSection .features {
+            width: 80%;
+        }
+        .middleSection .about {
+            width: 80%;
+        }
+        .button {
+            padding: 1px 50px;
+            border: 2px solid Black;
+            font-size: 13px;
+            text-align: start;
+        }
+        .lowerSection {
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+        .lowerSection .services {
+            width: 80%;
+        }
+        .lowerSection .product {
+            width: 80%;
+        }
+        .lowerSection .vision {
+            width: 80%;
+        }
+        .vision,
+        .about {
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 70px;
+        }
+    }
+    /*NOTE: service page starts here*/
+    .navigation2 {
+        display: flex;
+    }
+    .navigation2 a {
+        color: grey;
+        margin-left: 50px;
+        margin-top: 60px;
+        text-decoration: none;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    .navigation2 a:hover {
+        color: white;
+        background-color: grey;
+    }
+    .navigation2 .logo {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        width: 170px;
+    }
+    .services-header-img {
+        margin-bottom: 20px;
+    }
+    .services {
+        margin-bottom: 30px;
+    }
+    .sixsquares {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    .digital,
+    .ux,
+    .marketing,
+    .webdevelopment,
+    .iosDevelopment,
+    .androiddevelopment {
+        margin-top: 15px;
+        border: 1px solid black;
+        width: 425px;
+        height: 250px;
+        background-color: #f2f2f2;
+        text-align: left;
+        padding: 20px;
+    }
+    .sixsquares button {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 8px 35px;
+        margin-top: 25px;
+        background: white;
+    }
+    .facts {
+        display: flex;
+        margin: 20px;
+    }
+    .listthings {
+        list-style-type: square;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .services-info-img {
+        width: 380px;
+    }
+    footer {
+        margin-top: 50px;
+    }
 }
