@@ -1,0 +1,417 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+ 
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ 
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+     display: block;
+ }
+ 
+ body {
+     line-height: 1;
+ }
+ 
+ ol,
+ ul {
+     list-style: none;
+ }
+ 
+ blockquote,
+ q {
+     quotes: none;
+ }
+ 
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+     content: '';
+     content: none;
+ }
+ 
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ /* Set every element's box-sizing to border-box */
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ html,
+ body {
+     height: 100%;
+     font-family: 'Titillium Web', sans-serif;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-family: 'Bangers', cursive;
+     letter-spacing: 1px;
+     margin-bottom: 15px;
+ }
+ 
+ html {
+     box-sizing: border-box;
+     font-size: 62.5%;
+ }
+ 
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+ /*code starts here*/
+ 
+ .container {
+     width: 500px;
+     margin: auto;
+ }
+ 
+ .logo {
+     display: none;
+ }
+ 
+ .logo1 {
+     width: 50%;
+     padding: 5% 0%;
+     margin-left: 25%;
+ }
+ 
+ .middle3 img {
+     display: none;
+ }
+ 
+ header .navigation {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+ }
+ 
+ .navigation a {
+     text-decoration: none;
+     color: #C8C8C8;
+     border-top: 1px solid #C8C8C8;
+     text-align: center;
+     padding: 5% 0%;
+     font-size: 2.5rem;
+     font-weight: bold;
+ }
+ 
+ .navigation a:hover {
+     background-color: grey;
+     color: white;
+ }
+ 
+ .Contact {
+     border-bottom: 1px solid #C8C8C8;
+ }
+ /*header ends here*/
+ 
+ .middle3 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .middle3 .innovation {
+     font-size: 8rem;
+     width: 50%;
+     text-align: center;
+     margin-top: 10%
+ }
+ 
+ .button {
+     margin-right: 25%;
+     margin-bottom: 10%;
+ }
+ 
+ button {
+     background-color: white;
+     width: 250%;
+     border: 1px solid black;
+     padding: 10% 0%;
+ }
+ 
+ .middleSection {
+     display: flex;
+     flex-direction: column;
+     align-content: space-between;
+     margin: 5% 0%;
+ }
+ 
+ .middleSection h4 {
+     font-size: 1.8rem;
+     font-weight: bolder;
+ }
+ 
+ .middleSection p {
+     font-size: 1.8rem;
+     font-weight: bold;
+ }
+ 
+ .middleSection .features {
+     width: 100%;
+     margin: 5% 0%;
+ }
+ 
+ .middleSection .about {
+     width: 100%;
+     margin: 5% 0%;
+ }
+ 
+ .middle-img {
+     width: 100%;
+ }
+ 
+ .lowerSection {
+     display: flex;
+     flex-direction: column;
+     align-content: space-between;
+     margin: 5% 0%;
+ }
+ 
+ .lowerSection h4 {
+     font-size: 1.8rem;
+     font-weight: bolder;
+ }
+ 
+ .lowerSection p {
+     font-size: 1.8rem;
+     font-weight: bold;
+ }
+ 
+ .services,
+ .product,
+ .vision {
+     width: 100%;
+     margin: 5% 0%;
+ }
+ 
+ address {
+     margin: 10% 0%;
+     font-size: 1.8rem;
+     font-weight: bold;
+ }
+ 
+ footer {
+     margin: 5% 30%;
+     font-size: 1.8rem;
+     width: 50%;
+     font-weight: bold;
+ }
+ 
+ hr {
+     border: 2px solid black;
+ }
+ /*Tablet size*/
+ 
+ @media (min-width:800px) {
+     .container {
+         width: 80%;
+         margin: 0 auto;
+     }
+     .logo1 {
+         width: 30%;
+         margin: 0% 39%;
+         margin-top: 5%;
+         padding: 0%;
+     }
+     header .navigation {
+         display: flex;
+         flex-direction: row;
+     }
+     .navigation a {
+         border-style: none;
+         margin-right: 10%;
+         font-size: 2rem;
+         font-weight: bolder;
+     }
+     .middle3 .innovation {
+         width: 50%;
+         font-size: 12rem;
+     }
+     button {
+         width: 240%;
+         padding: 10% 0%;
+         font-size: 2rem;
+         font-weight: bold;
+     }
+     .middleSection {
+         flex-direction: row;
+     }
+     .middleSection .features {
+         margin-right: 5%;
+     }
+     .lowerSection {
+         flex-direction: row;
+     }
+     .lowerSection .services,
+     .lowerSection .product {
+         margin-right: 5%;
+     }
+ }
+ 
+ @media(min-width:1050px) {
+     .container {
+         width: 85%;
+         margin: 0 auto;
+         padding-left: 1%;
+     }
+     .logo1 {
+         display: none;
+     }
+     .logo {
+         display: flex;
+         width: 20%;
+     }
+     header {
+         display: flex;
+         margin-top: 5%;
+     }
+     header .navigation {
+         display: flex;
+         flex-flow: wrap;
+         justify-content: space-evenly;
+     }
+     .navigation a {
+         font-size: 2.5rem;
+         margin-right: 5%;
+         font-weight: bolder;
+     }
+     .middle3 img {
+         display: flex;
+         width: 40%;
+         margin-top: 5%;
+     }
+     .middle3 {
+         flex-flow: wrap;
+         justify-content: space-between;
+     }
+     .middle3 .innovation {
+         font-size: 14rem;
+         width: 30%;
+         text-align: center;
+         margin-left: 10%;
+         margin-top: 15%;
+     }
+     .button {
+         padding-left: 15%;
+     }
+     .middleSection h4,
+     .lowerSection H4 {
+         font-size: 500%;
+     }
+     .middleSection P,
+     .lowerSection P,
+     address {
+         font-size: 380%;
+     }
+     footer {
+         font-size: 380%;
+     }
+ }
